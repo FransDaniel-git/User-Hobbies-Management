@@ -1,0 +1,38 @@
+*.log
+.DS_Store
+# Environment: semua varian .env (berisi APP_KEY, kredensial DB, JWT_SECRET)
+# kecuali contohnya agar penilai tahu cara setup.
+.env
+.env.backup
+.env.production
+.env.local
+.env.*.local
+!.env.example
+.phpactor.json
+.phpunit.result.cache
+/.fleet
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/auth.json
+/node_modules
+/public/build
+/public/hot
+/public/storage
+# Kunci kriptografi (JWT RSA/ECDSA, Laravel keys, sertifikat).
+/storage/*.key
+*.pem
+*.key
+*.p12
+*.pfx
+# Database lokal (SQLite dev) agar data tidak ikut ter-commit.
+/database/*.sqlite
+/database/*.sqlite-journal
+*.sqlite-journal
+/storage/pail
+/vendor
+Homestead.json
+Homestead.yaml
+Thumbs.db
